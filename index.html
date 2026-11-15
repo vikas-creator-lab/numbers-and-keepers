@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bookkeeper Melbourne West &amp; Geelong | Xero, MYOB, QuickBooks | Numbers &amp; Keepers</title>
-<meta name="description" content="CPA-qualified bookkeeping, budgeting and finance automation for small businesses in Werribee, Tarneit, Point Cook and Geelong. Xero, MYOB and QuickBooks help.">
+<title>Bookkeeper Melbourne West &amp; Geelong | Xero, MYOB, QuickBooks &amp; more | Numbers &amp; Keepers</title>
+<meta name="description" content="CPA-qualified bookkeeping, budgeting and finance automation for small businesses in Werribee, Tarneit, Point Cook and Geelong. Xero, MYOB, QuickBooks and any accounting software.">
 <link rel="canonical" href="https://numbersandkeepers.com.au/">
 <meta name="theme-color" content="#26324D">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Numbers &amp; Keepers">
 <meta property="og:title" content="Bookkeeping and finance support for small businesses | Numbers &amp; Keepers">
-<meta property="og:description" content="CPA-qualified bookkeeping, budgeting and finance automation in Melbourne's west and Geelong. Xero, MYOB and QuickBooks help.">
+<meta property="og:description" content="CPA-qualified bookkeeping, budgeting and finance automation in Melbourne's west and Geelong. Xero, MYOB, QuickBooks and any accounting software.">
 <meta property="og:url" content="https://numbersandkeepers.com.au/">
 <meta property="og:locale" content="en_AU">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
   "email": "parulchawlacpa@gmail.com",
   "description": "CPA-qualified bookkeeping, budgeting and finance automation for small businesses.",
   "areaServed": ["Werribee", "Wyndham Vale", "Tarneit", "Point Cook", "Hoppers Crossing", "Truganina", "Geelong", "Melbourne", "Australia"],
-  "knowsAbout": ["Bookkeeping", "Xero", "MYOB", "QuickBooks", "Budgeting", "Cash flow forecasting", "Finance automation"],
+  "knowsAbout": ["Bookkeeping", "Xero", "MYOB", "QuickBooks", "Sage", "SAP", "Oracle", "Microsoft Excel", "Budgeting", "Cash flow forecasting", "Finance automation"],
   "founder": {"@type": "Person", "name": "Parul Chawla", "jobTitle": "CPA"}
 }
 </script>
@@ -37,7 +37,7 @@
   "mainEntity": [
     {"@type": "Question", "name": "What does a bookkeeper do?", "acceptedAnswer": {"@type": "Answer", "text": "A bookkeeper records and reconciles your day-to-day transactions, so your accounts are accurate and you always know where the business stands."}},
     {"@type": "Question", "name": "Do I need a bookkeeper if I have an accountant?", "acceptedAnswer": {"@type": "Answer", "text": "Often, yes. Your accountant or tax agent handles tax returns and advice. We keep the books clean all year, which makes their job quicker."}},
-    {"@type": "Question", "name": "Which accounting software do you work with?", "acceptedAnswer": {"@type": "Answer", "text": "Xero, MYOB and QuickBooks Online. If you use something else, ask us and we'll let you know."}},
+    {"@type": "Question", "name": "Which accounting software do you work with?", "acceptedAnswer": {"@type": "Answer", "text": "Most of them. We work across Xero, MYOB and QuickBooks Online, as well as Sage, SAP, Oracle and Excel. Whatever you use, we can work with it or help you move to something that suits you better."}},
     {"@type": "Question", "name": "My books are months behind. Can you help?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Catch-up bookkeeping is one of our most common jobs. We'll bring everything up to date, then keep it that way."}},
     {"@type": "Question", "name": "Do you work with sole traders?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We work with sole traders, tradies, freelancers and small teams."}},
     {"@type": "Question", "name": "Do I need to be nearby?", "acceptedAnswer": {"@type": "Answer", "text": "No. We can meet in person around Melbourne's west and Geelong, or work fully online."}}
@@ -79,12 +79,25 @@ nav.main a.btn{color:var(--ivory);padding:12px 22px}
 .menu-toggle{display:none;background:none;border:2px solid var(--ink);border-radius:999px;color:var(--ink);font:inherit;font-weight:700;font-size:16px;padding:8px 18px;cursor:pointer}
 
 .hero .wrap{display:flex;flex-wrap:wrap;gap:3rem;align-items:center;padding-top:clamp(3rem,8vw,6rem);padding-bottom:clamp(3rem,8vw,6rem)}
-.hero-copy{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:1.5rem}
-.eyebrow{font-size:16px;font-weight:700;color:var(--clay-text)}
+.hero-copy{flex:1 1 460px;min-width:0;display:flex;flex-direction:column;gap:1.5rem}
 .hero-lede{font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:560px;color:var(--muted)}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.hero-card{flex:1 1 340px;min-width:0;background:var(--sand);border-radius:28px;padding:2rem;display:flex;flex-direction:column;gap:1rem}
-.hero-card h2{font-size:1.4rem}
+.hero-visual{flex:1 1 460px;min-width:0;position:relative;padding-bottom:5.5rem}
+.hero-img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;border-radius:28px;display:block;background:var(--sand)}
+.hero-card{position:absolute;left:-2.5rem;bottom:0;width:min(300px,80%);background:#fff;border-radius:22px;padding:1.5rem 1.75rem;display:flex;flex-direction:column;gap:.85rem;box-shadow:0 18px 40px rgba(38,50,77,.12)}
+.hero-card h2{font-size:1.25rem}
+.hero-card .ticks{gap:.5rem;font-size:16px}
+.hero-card .ticks li::before{margin-top:9px}
+@media (max-width:900px){.hero-visual{padding-bottom:0}.hero-card{position:relative;left:auto;bottom:auto;width:auto;margin:-3rem 1rem 0}}
+
+.photo-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.photo-card{background:#fff;border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.photo-card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--sand)}
+.photo-card div{padding:1.25rem 1.5rem 1.5rem;display:flex;flex-direction:column;gap:6px}
+.split{display:flex;flex-wrap:wrap;gap:clamp(2rem,5vw,4rem);align-items:center}
+.split img{flex:1 1 380px;min-width:0;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:28px;display:block;background:var(--sand)}
+.split-copy{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:1rem;align-items:flex-start}
+.split-copy .btn{margin-top:.5rem}
 .ticks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.85rem}
 .ticks li{display:flex;gap:12px;align-items:flex-start}
 .ticks li::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--clay);margin-top:10px}
@@ -94,6 +107,7 @@ nav.main a.btn{color:var(--ivory);padding:12px 22px}
 .band{background:var(--sand)}
 .band .card{background:var(--ivory)}
 .software h3{font-size:1.6rem}
+.software .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
 .steps{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));list-style:none;margin:0;padding:0}
 .steps li{display:flex;flex-direction:column;gap:10px}
 .num{width:44px;height:44px;border-radius:50%;background:var(--blush);display:flex;align-items:center;justify-content:center;font-weight:700}
@@ -159,22 +173,24 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:sp
 <section class="hero">
   <div class="wrap">
     <div class="hero-copy">
-      <p class="eyebrow">Melbourne's west · Geelong · online Australia-wide</p>
       <h1>Bookkeeping and finance support for small businesses</h1>
-      <p class="hero-lede">Tidy books, clear budgets and less admin. We look after the numbers in Xero, MYOB or QuickBooks so you can get on with running your business.</p>
+      <p class="hero-lede">Tidy books, clear budgets and less admin. We look after the numbers in whatever software you use, so you can get on with running your business.</p>
       <div class="hero-ctas">
         <a class="btn" href="#contact">Get in touch</a>
         <a class="link-btn" href="#services">See our services</a>
       </div>
     </div>
-    <div class="hero-card">
-      <h2>How we can help</h2>
-      <ul class="ticks">
-        <li>Books kept up to date, every month</li>
-        <li>A clear view of your cash flow</li>
-        <li>Less time on invoices and receipts</li>
-        <li>CPA-qualified, in plain English</li>
-      </ul>
+    <div class="hero-visual">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1781246435700-afec19012b45?auto=format&amp;fit=crop&amp;w=900&amp;h=760&amp;q=70" srcset="https://images.unsplash.com/photo-1781246435700-afec19012b45?auto=format&amp;fit=crop&amp;w=600&amp;h=507&amp;q=70 600w, https://images.unsplash.com/photo-1781246435700-afec19012b45?auto=format&amp;fit=crop&amp;w=900&amp;h=760&amp;q=70 900w, https://images.unsplash.com/photo-1781246435700-afec19012b45?auto=format&amp;fit=crop&amp;w=1300&amp;h=1098&amp;q=70 1300w" sizes="(max-width: 900px) 100vw, 480px" width="900" height="760" alt="Laptop showing financial charts on a sunny desk with a coffee cup" fetchpriority="high">
+      <div class="hero-card">
+        <h2>How we can help</h2>
+        <ul class="ticks">
+          <li>Books kept up to date, every month</li>
+          <li>A clear view of your cash flow</li>
+          <li>Less time on invoices and receipts</li>
+          <li>CPA-qualified, in plain English</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -196,16 +212,32 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:sp
   </div>
 </section>
 
+<section id="who" class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Who we help</h2>
+      <p class="muted">Small businesses that would rather spend their time on the work they love than on the books.</p>
+    </div>
+    <div class="photo-grid">
+      <article class="photo-card"><img src="https://images.unsplash.com/photo-1687422808248-f807f4ea2a2e?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=70" width="600" height="450" loading="lazy" alt="Cafe owner in an apron checking his phone behind the counter"><div><h3>Cafes and hospitality</h3><p class="muted">Daily takings, supplier bills and wages, reconciled and clear.</p></div></article>
+      <article class="photo-card"><img src="https://images.unsplash.com/photo-1645651964715-d200ce0939cc?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=70" width="600" height="450" loading="lazy" alt="Drill, paintbrush and woodworking tools on a timber bench"><div><h3>Tradies and contractors</h3><p class="muted">Invoices out on time, receipts sorted, and a clear view of each job.</p></div></article>
+      <article class="photo-card"><img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=70" width="600" height="450" loading="lazy" alt="Shop owner serving a customer at a counter with a payment tablet"><div><h3>Retail and local shops</h3><p class="muted">Sales, stock purchases and card payments that match the bank.</p></div></article>
+      <article class="photo-card"><img src="https://images.unsplash.com/photo-1753164597612-5e71b83fda91?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=70" width="600" height="450" loading="lazy" alt="Designer on the phone while working on a laptop in her studio"><div><h3>Sole traders and freelancers</h3><p class="muted">Simple, tidy books so you always know what you're earning.</p></div></article>
+    </div>
+  </div>
+</section>
+
 <section id="software" class="section band software">
   <div class="wrap">
     <div class="section-head">
-      <h2>Xero, MYOB and QuickBooks help</h2>
-      <p class="muted">We work in the software you already use. Not on any yet? We'll help you choose and set it up properly from day one.</p>
+      <h2>Help with any accounting software</h2>
+      <p class="muted">We work in the software you already use, whatever it is. Not on any yet? We'll help you choose the right one and set it up properly from day one.</p>
     </div>
     <div class="grid">
       <article class="card"><h3>Xero</h3><p class="muted">Setup, bank feeds, clean-ups, training and ongoing Xero bookkeeping.</p></article>
       <article class="card"><h3>MYOB</h3><p class="muted">MYOB Business and AccountRight support, from data entry to month-end.</p></article>
       <article class="card"><h3>QuickBooks</h3><p class="muted">QuickBooks Online setup, tidy-ups and day-to-day bookkeeping.</p></article>
+      <article class="card"><h3>And the rest</h3><p class="muted">Sage, SAP, Oracle, Excel and other platforms. If you use it, we can work with it.</p></article>
     </div>
     <p class="muted" style="margin-top:2rem">We also connect your accounting software with Microsoft 365, Excel and receipt-capture apps, so information flows without re-typing.</p>
   </div>
@@ -219,6 +251,17 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:sp
       <li><span class="num" aria-hidden="true">2</span><h3>We review your books</h3><p class="muted">We look at where things stand and suggest a clear plan that fits.</p></li>
       <li><span class="num" aria-hidden="true">3</span><h3>We keep it running</h3><p class="muted">Your books stay current, and you get regular updates in plain English.</p></li>
     </ol>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="wrap split">
+    <img src="https://images.unsplash.com/photo-1771758249853-415175dc29b9?auto=format&amp;fit=crop&amp;w=900&amp;h=675&amp;q=70" width="900" height="675" loading="lazy" alt="A tall stack of paper invoices and receipts">
+    <div class="split-copy">
+      <h2>Behind on your books?</h2>
+      <p class="muted">It happens to almost every busy business owner. Whether it's three months or three years, we'll sort through the backlog, reconcile everything and get you up to date, without judgement.</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
   </div>
 </section>
 
@@ -240,12 +283,15 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:sp
       <h2>About us</h2>
       <p class="muted">Numbers &amp; Keepers is a small bookkeeping and finance practice based in Melbourne's west. We pair solid accounting with smart use of technology, so your books are accurate and your admin is lighter.</p>
     </div>
-    <article class="person">
-      <p class="role">Who you'll be working with</p>
-      <h3 style="font-size:1.75rem">Parul Chawla, CPA</h3>
-      <p class="muted">Parul is a CPA (Australia) with experience across financial accounting, reporting, audit and budgeting. She has worked with small and medium businesses in Australia and with US clients, and has helped organisations move their finance systems onto Xero.</p>
-      <p class="muted">Her focus is simple: numbers you can trust and act on.</p>
-    </article>
+    <div class="split">
+      <img src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?auto=format&amp;fit=crop&amp;w=900&amp;h=675&amp;q=70" width="900" height="675" loading="lazy" alt="Hands working on a laptop at a bright, tidy desk">
+      <article class="person" style="flex:1 1 380px;min-width:0">
+        <p class="role">Who you'll be working with</p>
+        <h3 style="font-size:1.75rem">Parul Chawla, CPA</h3>
+        <p class="muted">Parul is a CPA (Australia) with experience across financial accounting, reporting, audit and budgeting. She has worked with small and medium businesses in Australia and with US clients, and has helped organisations move their finance systems onto Xero.</p>
+        <p class="muted">Her focus is simple: numbers you can trust and act on.</p>
+      </article>
+    </div>
     <div class="areas">
       <h3>Areas we serve</h3>
       <p class="muted">Werribee, Wyndham Vale, Tarneit, Point Cook, Hoppers Crossing, Truganina, Geelong and surrounds. We also work online with small businesses anywhere in Australia.</p>
@@ -259,7 +305,7 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:sp
     <div class="faqs">
       <details open><summary>What does a bookkeeper do?</summary><p>A bookkeeper records and reconciles your day-to-day transactions, so your accounts are accurate and you always know where the business stands.</p></details>
       <details><summary>Do I need a bookkeeper if I have an accountant?</summary><p>Often, yes. Your accountant or tax agent handles tax returns and advice. We keep the books clean all year, which makes their job quicker.</p></details>
-      <details><summary>Which accounting software do you work with?</summary><p>Xero, MYOB and QuickBooks Online. If you use something else, ask us and we'll let you know.</p></details>
+      <details><summary>Which accounting software do you work with?</summary><p>Most of them. We work across Xero, MYOB and QuickBooks Online, as well as Sage, SAP, Oracle and Excel. Whatever you use, we can work with it or help you move to something that suits you better.</p></details>
       <details><summary>My books are months behind. Can you help?</summary><p>Yes. Catch-up bookkeeping is one of our most common jobs. We'll bring everything up to date, then keep it that way.</p></details>
       <details><summary>Do you work with sole traders?</summary><p>Yes. We work with sole traders, tradies, freelancers and small teams.</p></details>
       <details><summary>Do I need to be nearby?</summary><p>No. We can meet in person around Melbourne's west and Geelong, or work fully online.</p></details>
